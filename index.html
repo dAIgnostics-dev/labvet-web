@@ -85,8 +85,14 @@
 </header>
 
 <main>
-  <section class="intro container" aria-labelledby="hero-title">
-    <div class="intro-grid">
+  <section class="intro" aria-labelledby="hero-title" data-pin>
+    <div class="intro-media">
+      <div class="intro-media__frame">
+        <img src="assets/hero-labvet.jpg" alt="A veterinarian listening to a dog's chest with a stethoscope on an exam table, with the animal's patient record on a wall screen" width="1024" height="572" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+    <div class="container intro-inner">
+    <div class="intro-hero">
       <div class="intro-copy">
         <h1 id="hero-title" class="hero-title">Lab<span class="accent">Vet</span> Studio</h1>
         <p class="intro-tagline" role="doc-subtitle">One platform for every animal that comes through your door</p>
@@ -96,10 +102,7 @@
           <a class="btn btn-primary" href="#contact">Request a demo</a>
         </div>
       </div>
-      <div class="intro-media">
-        <img src="assets/hero-labvet.jpg" alt="A veterinarian listening to a dog's chest with a stethoscope on an exam table, with the animal's patient record on a wall screen" width="1168" height="784" fetchpriority="high" decoding="async">
-      </div>
-    </div>
+    </div><!-- /.intro-hero -->
 
     <div class="feature-grid">
       <article class="feature">
@@ -139,9 +142,10 @@
         <p>Statistical and AI processing, trend analysis across an animal's history and across the cases in your archive, and results presented with confidence, uncertainty and full traceability — never an unexplained score.</p>
       </article>
     </div>
+    </div><!-- /.intro-inner -->
   </section>
 
-  <div class="pin-region">
+  <div class="pin-region" data-pin>
   <section class="hero container">
     <p class="eyebrow">Platform architecture</p>
     <h2 id="stack-title" class="hero-title stack-title">The Core Stack</h2>

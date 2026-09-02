@@ -85,8 +85,14 @@
 </header>
 
 <main>
-  <section class="intro container" aria-labelledby="hero-title">
-    <div class="intro-grid">
+  <section class="intro" aria-labelledby="hero-title" data-pin>
+    <div class="intro-media">
+      <div class="intro-media__frame">
+        <img src="../assets/hero-labvet.jpg" alt="Osoba u bijeloj kuti u veterinarskoj ambulanti stetoskopom pregledava psa na stolu za pregled, a na zidnom zaslonu prikazan je karton životinje" width="1024" height="572" fetchpriority="high" decoding="async">
+      </div>
+    </div>
+    <div class="container intro-inner">
+    <div class="intro-hero">
       <div class="intro-copy">
         <h1 id="hero-title" class="hero-title">Lab<span class="accent">Vet</span> Studio</h1>
         <p class="intro-tagline" role="doc-subtitle">Jedna platforma za svaku životinju koja uđe na vaša vrata</p>
@@ -96,10 +102,7 @@
           <a class="btn btn-primary" href="#kontakt">Zatražite demo</a>
         </div>
       </div>
-      <div class="intro-media">
-        <img src="../assets/hero-labvet.jpg" alt="Osoba u bijeloj kuti u veterinarskoj ambulanti stetoskopom pregledava psa na stolu za pregled, a na zidnom zaslonu prikazan je karton životinje" width="1168" height="784" fetchpriority="high" decoding="async">
-      </div>
-    </div>
+    </div><!-- /.intro-hero -->
 
     <div class="feature-grid">
       <article class="feature">
@@ -139,9 +142,10 @@
         <p>Statistička i AI obrada, analiza trendova kroz povijest životinje i kroz slučajeve u vašem arhivu te rezultati prikazani uz razinu pouzdanosti, procjenu nesigurnosti i punu sljedivost — nikad neobjašnjena brojka.</p>
       </article>
     </div>
+    </div><!-- /.intro-inner -->
   </section>
 
-  <div class="pin-region">
+  <div class="pin-region" data-pin>
   <section class="hero container">
     <p class="eyebrow">Arhitektura platforme</p>
     <h2 id="stack-title" class="hero-title stack-title">Core Stack</h2>
