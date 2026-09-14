@@ -54,10 +54,10 @@ python3 -m http.server 8080
 
 ## Notes
 
-- This repository started as a copy of `labmed-web`. The **Solutions** and
-  **Use cases** pages (EN + HR), the header dropdown items and the Core Stack
-  card copy on the landing page still carry the medical/hospital text from
-  LabMed with the brand name swapped — they need veterinary-specific content.
+- This repository started as a copy of `labmed-web`. Solutions, Use cases,
+  the header dropdowns and the Core Stack card copy now carry veterinary
+  content derived from the landing-page feature copy; the use cases are
+  illustrative scenarios, not client case studies.
 - The Croatian landing copy (`hr/index.html` intro + feature grid) is a
   translation of the English text, not client-supplied copy — proofread it.
 

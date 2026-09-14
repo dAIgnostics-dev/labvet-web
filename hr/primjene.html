@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Primjene | LabVet Studio</title>
-  <meta name="description" content="Primjene dAIgnostics platforme u praksi: radiološko izvještavanje, digitalna terapijska lista, automatski rasporedi liječnika, modernizacija patoloških arhiva i dijagnostika biosignala.">
+  <meta name="description" content="Kako LabVet Studio radi u praksama, specijalističkim klinikama i veterinarskim patološkim laboratorijima: ilustrativni scenariji od biopsije do potpisanog nalaza, interni analizatori, pregled preparata, dokumentacija razudbe i organizacija prakse.">
   <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
   <link rel="alternate" hreflang="en" href="../use-cases.html">
   <link rel="alternate" hreflang="hr" href="primjene.html">
@@ -40,8 +40,9 @@
 
 <header class="site-head">
   <div class="container head-row">
-    <a class="brand" href="index.html" aria-label="dAIgnostics početna">
+    <a class="brand" href="index.html" aria-label="LabVet Studio, proizvod tvrtke dAIgnostics, početna">
       <img src="../assets/daignostics-logo.png" alt="dAIgnostics" class="brand-logo" width="151" height="36">
+      <span class="brand-product">LabVet Studio</span>
     </a>
     <nav class="main-nav" aria-label="Glavna navigacija">
       <ul>
@@ -50,11 +51,13 @@
             <svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="dd">
-            <li><a href="rjesenja.html#health-studio">Health Studio: dijagnostička platforma</a></li>
-            <li><a href="rjesenja.html#dai-edge">dAI Edge: suverenost podataka</a></li>
-            <li><a href="rjesenja.html#ai-izvjestavanje">AI-asistirano izvještavanje</a></li>
-            <li><a href="rjesenja.html#cezih">Nacionalna povezivost (CEZIH)</a></li>
-            <li><a href="rjesenja.html#operacije">Optimizacija bolničkih resursa</a></li>
+            <li><a href="rjesenja.html#pathology-workflow">Patološki tijek rada: od zaprimanja do potpisa</a></li>
+            <li><a href="rjesenja.html#digital-pathology">Digitalna patologija i rad sa slikama</a></li>
+            <li><a href="rjesenja.html#diagnostic-pipeline">Automatizacija dijagnostičkog procesa</a></li>
+            <li><a href="rjesenja.html#animal-data">Podaci o životinjama, vlasnicima i dokumentima</a></li>
+            <li><a href="rjesenja.html#operations">Planiranje, naplata i odštetni zahtjevi</a></li>
+            <li><a href="rjesenja.html#reporting">Automatski nalazi i sažeci za vlasnike</a></li>
+            <li><a class="dd-all" href="rjesenja.html">Sva rješenja →</a></li>
           </ul>
         </li>
         <li class="has-dd">
@@ -62,11 +65,12 @@
             <svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="dd">
-            <li><a href="#radiologija">Nacrt radiološkog nalaza u sekundama</a></li>
-            <li><a href="#terapijska-lista">Digitalna terapijska lista</a></li>
-            <li><a href="#raspored">Automatski raspored liječnika</a></li>
-            <li><a href="#patologija">Modernizacija patološkog arhiva</a></li>
-            <li><a href="#biosignali">Od biosignala do nalaza</a></li>
+            <li><a href="primjene.html#od-biopsije-do-nalaza">Od biopsije do potpisanog nalaza</a></li>
+            <li><a href="primjene.html#interni-analizatori">Interni analizatori, ispravni rasponi</a></li>
+            <li><a href="primjene.html#probir-preparata">Pregled preparata s AI probirom</a></li>
+            <li><a href="primjene.html#razudba-certifikati">Razudba s provjerenom dokumentacijom</a></li>
+            <li><a href="primjene.html#organizacija-prakse">Planiranje, kapaciteti i zahtjevi</a></li>
+            <li><a class="dd-all" href="primjene.html">Sve primjene →</a></li>
           </ul>
         </li>
       </ul>
@@ -80,109 +84,71 @@
   <section class="hero subhero container">
     <p class="eyebrow">Primjene</p>
     <h1 class="hero-title">LabVet u <span class="accent">praksi</span></h1>
-    <p class="lede">Konkretni problemi iz klinika, laboratorija i bolnica, i kako ih
-      slojevi dAI platforme rješavaju u svakodnevnom radu.</p>
+    <p class="lede">Svakodnevne situacije iz praksi, specijalističkih klinika i veterinarskih patoloških laboratorija, i kako ih
+      LabVet Studio rješava. Ilustrativni scenariji, ne studije slučaja klijenata.</p>
   </section>
 
   <div class="page-sections container">
 
-    <section class="sol" id="radiologija" aria-labelledby="t-radiologija">
-      <p class="sol-kicker">Primjena 01 · Radiologija</p>
-      <h2 class="sol-title" id="t-radiologija">Nacrt radiološkog nalaza u sekundama, na hrvatskom</h2>
-      <ul class="layer-badges" aria-label="Korišteni slojevi">
-        <li class="lb lb-datahub"><i aria-hidden="true"></i>dAI DataHub</li>
-        <li class="lb lb-inference"><i aria-hidden="true"></i>dAI Inference</li>
-        <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
-      </ul>
-      <div class="uc-block">
-        <span class="uc-label">Izazov</span>
-        <p>Radiolozi troše značajno vrijeme na pisanje nalaza i ručno traženje usporedivih prethodnih
-          slučajeva; pretraga po ključnim riječima ne pronalazi slučajeve opisane drugim terminima.</p>
-      </div>
-      <div class="uc-block">
-        <span class="uc-label">Rješenje</span>
-        <p>Sustav semantički rangira slične prethodne slučajeve iz vlastite baze ustanove i sastavlja
-          strukturiran nacrt nalaza utemeljen na njima. Liječnik nacrt provjerava, korigira i potpisuje, a svaki korigirani nalaz odmah obogaćuje bazu znanja. Sve radi lokalno, bez slanja podataka
-          izvan ustanove.</p>
-      </div>
-      <div class="uc-block">
-        <span class="uc-label">Učinak</span>
-        <p>Strukturiran nacrt u sekundama umjesto minuta pisanja i traženja; svaki potpisani nalaz poboljšava sljedeći nacrt; arhiv ostaje u ustanovi.</p>
-      </div>
-      <ul class="points">
-        <li>Pretraga po značenju: „krv u mokraći” pronalazi i nalaze označene „hematurija”, a višejezični model radi lokalno, bez API ključa</li>
-        <li>Nacrt nalaza vjeran stilu i terminologiji ustanove (CT abdomena, CT urografija, CT zdjelice)</li>
-        <li>Liječnik u petlji: nacrt je eksplicitno prijedlog za provjeru, korekciju i potpis</li>
-        <li>Sažetak anamneze u 3–6 kliničkih natuknica; patološki nalazi i mjere prikazani prvi</li>
-      </ul>
-      <p class="sol-note"><span class="status-chip">Pilot</span></p>
-    </section>
-
-    <section class="sol" id="terapijska-lista" aria-labelledby="t-terapijska">
-      <p class="sol-kicker">Primjena 02 · Specijalna klinika</p>
-      <h2 class="sol-title" id="t-terapijska">Digitalna terapijska lista: s papira u auditabilan zapis</h2>
+    <section class="sol" id="od-biopsije-do-nalaza" aria-labelledby="t-od-biopsije-do-nalaza">
+      <p class="sol-kicker">Primjena 01 · Referentni patološki laboratorij</p>
+      <h2 class="sol-title" id="t-od-biopsije-do-nalaza">Od biopsije u pošti do potpisanog nalaza kod uputnog veterinara</h2>
       <ul class="layer-badges" aria-label="Korišteni slojevi">
         <li class="lb lb-edge"><i aria-hidden="true"></i>dAI Edge</li>
+        <li class="lb lb-datahub"><i aria-hidden="true"></i>dAI DataHub</li>
         <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
       </ul>
       <div class="uc-block">
         <span class="uc-label">Izazov</span>
-        <p>Terapija pacijenta vodila se na papirnatom obrascu i odjelnoj Word listi: bez automatskih
-          sigurnosnih provjera, teško čitljivo i bez revizijskog traga.</p>
+        <p>Biopsija stiže s rukom ispisanim obrascem za slanje. Zaprimanje, praćenje blokova i preparata, nalaz patologa i račun vode se u odvojenim alatima, a uputni veterinar zove i pita gdje je slučaj.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Rješenje</span>
-        <p>Proces lijekova digitaliziran je od prijema do otpusta: sestra fotografira rukom ispisani
-          obrazac, AI prepoznavanje rukopisa uz obveznu ručnu potvrdu unosi dosadašnju terapiju,
-          liječnik ordinira uz PIN e-potpis, a primjene se evidentiraju uz krevet, i bez mreže.</p>
+        <p>Uzorak se zaprima pri dolasku i povezuje sa životinjom, vlasnikom i uputnim veterinarom. Svaki blok, preparat i bojenje prati se kroz obradu, patolog potpisuje iz reda čekanja, a potpisani nalaz i račun izlaze iz istog zapisa.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Učinak</span>
-        <p>Svaka doza, izmjena i premošćivanje upozorenja sljedivi su do osobe i vremena; provjere alergija rade automatski; odjel radi i kad mreža ne radi.</p>
+        <p>Status svakog slučaja vidljiv je bez odlaska do radnog stola, uputni veterinar dobiva nalaz čim je potpisan, a ništa se ne naplaćuje dvaput ni nijednom.</p>
       </div>
       <ul class="points">
-        <li>Prepoznavanje rukopisa s pragom pouzdanosti i obveznom potvrdom čovjeka za svako polje; sirovi rezultat arhiviran radi sljedivosti</li>
-        <li>Automatska upozorenja na alergije provjerena u sučelju i na serveru, uz trajno logiran override</li>
-        <li>Serverski PIN e-potpis za usklađivanje, ordiniranje i prekid terapije; revizijski trag bez mogućnosti izmjene</li>
-        <li>Offline-first rad (lokalna predmemorija + sinkronizacija) i EU hosting usklađen s GDPR-om</li>
+        <li>Obrazac za slanje provjeren na potpunost prije zaprimanja slučaja</li>
+        <li>Praćenje blokova, preparata i bojenja s položajem svakog slučaja</li>
+        <li>Red za potpisivanje po patologu s vidljivim vremenom obrade</li>
+        <li>Nalaz dostavljen uputnom veterinaru i račun izdan iz istog zapisa slučaja</li>
       </ul>
-      <p class="sol-note"><span class="status-chip">Demonstracijsko okruženje</span> Prikazano na fiktivnim podacima.</p>
+      <p class="sol-note"><span class="status-chip">Ilustrativni scenarij</span></p>
     </section>
-
-    <section class="sol" id="raspored" aria-labelledby="t-raspored">
-      <p class="sol-kicker">Primjena 03 · Specijalna kardiovaskularna bolnica</p>
-      <h2 class="sol-title" id="t-raspored">Automatski mjesečni raspored liječnika</h2>
+    <section class="sol" id="interni-analizatori" aria-labelledby="t-interni-analizatori">
+      <p class="sol-kicker">Primjena 02 · Praksa za male životinje</p>
+      <h2 class="sol-title" id="t-interni-analizatori">Interna hematologija i biokemija tumačene prema ispravnim referentnim rasponima</h2>
       <ul class="layer-badges" aria-label="Korišteni slojevi">
+        <li class="lb lb-edge"><i aria-hidden="true"></i>dAI Edge</li>
         <li class="lb lb-inference"><i aria-hidden="true"></i>dAI Inference</li>
         <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
       </ul>
       <div class="uc-block">
         <span class="uc-label">Izazov</span>
-        <p>Mjesečni raspored liječnika preko više lokacija i radilišta (odjel, ambulante, kateterizacijski laboratorij, dežurstva) slagao se ručno u tablicama: sporo, podložno
-          greškama i bez jamstva poštivanja HZZO termina i fonda sati.</p>
+        <p>Interni analizatori ispisuju rezultate koje netko prepisuje u sustav prakse, a vrijednost normalna za greyhounda označava se kao da je riječ o labradoru.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Rješenje</span>
-        <p>Optimizacijski solver generira raspored po satima uz tvrda pravila (kompetencije, fond sati,
-          HZZO prozori, putovanje između gradova) i slojevite prioritete. Kad termin ostane nepokriven,
-          sustav objašnjava zašto i predlaže konkretne mjere; kod bolovanja automatski rangira zamjene.</p>
+        <p>Rezultati analizatora uvoze se automatski s metapodacima, provjeravaju pri dolasku i uspoređuju s referentnim rasponima za vrstu, pasminu i dob životinje. Vrijednosti izvan raspona označene su, s prikazanim razlogom.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Učinak</span>
-        <p>Mjesečni raspored u minutama umjesto danima, uz HZZO prozore i fond sati zajamčene samom konstrukcijom, te obrazloženu zamjenu predloženu čim netko javi bolovanje.</p>
+        <p>Bez prepisivanja, bez propuštenih oznaka i s manje lažnih uzbuna kod pasmina i vrsta s vlastitim normalnim vrijednostima.</p>
       </div>
       <ul class="points">
-        <li>Matrica kompetencija liječnik × radilište (dozvoljeno / preferirano / zabranjeno) i HZZO ugovoreni prioritetni prozori</li>
-        <li>Dijagnostika nepokrivenih termina s ljestvicom relaksacija i konkretnim prijedlozima</li>
-        <li>Trenutno ponovno rješavanje objavljenog rasporeda kod izostanaka, uz verzioniranje i oznake izmjena</li>
-        <li>KPI nadzorna ploča: pokrivenost bez ručne intervencije, vrijeme do potvrđene zamjene</li>
+        <li>Izravne poveznice na interne analizatore, bez prepisivanja</li>
+        <li>Referentni rasponi prilagođeni vrsti, pasmini i dobi</li>
+        <li>Tehničke provjere i kontrola kvalitete prije nego što vrijednost dođe do kliničara</li>
+        <li>Prikaz trenda kroz prethodne rezultate životinje</li>
       </ul>
-      <p class="sol-note"><span class="status-chip">Samostalna aplikacija</span></p>
+      <p class="sol-note"><span class="status-chip">Ilustrativni scenarij</span></p>
     </section>
-
-    <section class="sol" id="patologija" aria-labelledby="t-patologija">
-      <p class="sol-kicker">Primjena 04 · Veterinarski patološki zavod</p>
-      <h2 class="sol-title" id="t-patologija">Spašavanje i modernizacija patološkog arhiva</h2>
+    <section class="sol" id="probir-preparata" aria-labelledby="t-probir-preparata">
+      <p class="sol-kicker">Primjena 03 · Veterinarska onkologija</p>
+      <h2 class="sol-title" id="t-probir-preparata">Slike cijelih preparata uspoređene kroz vremenske točke, s AI-jem kao drugim parom očiju</h2>
       <ul class="layer-badges" aria-label="Korišteni slojevi">
         <li class="lb lb-datahub"><i aria-hidden="true"></i>dAI DataHub</li>
         <li class="lb lb-inference"><i aria-hidden="true"></i>dAI Inference</li>
@@ -190,65 +156,86 @@
       </ul>
       <div class="uc-block">
         <span class="uc-label">Izazov</span>
-        <p>Zavod za veterinarsku patologiju ostao je nakon ransomware napada s oštećenom legacy bazom
-          od više od 51 000 zapisa nalaza, i bez modernog sustava za svakodnevni rad.</p>
+        <p>Kontrolne biopsije čitaju se s razmakom od više mjeseci, ranije preparate teško je pronaći, a broj mitoza određuje se okom pod pritiskom vremena.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Rješenje</span>
-        <p>Podaci su forenzički obnovljeni i pretvoreni u sigurnu, GDPR-usklađenu aplikaciju:
-          pretraživ arhiv, strukturirani obrasci nalaza po tipu pretrage (razudba, patohistologija,
-          citologija), upravljanje slikama, glasovna diktacija na hrvatskom i AI-nacrti nalaza, uz inferenciju isključivo unutar EU-a.</p>
+        <p>Slike cijelih preparata pohranjene su uz slučaj i otvaraju se usporedno kroz vremenske točke. AI probir predlaže broj mitoza, celularnost i područja koja zaslužuju pažljiviji pogled; patolog potvrđuje ili ispravlja svaki prijedlog prije nego što uđe u nalaz.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Učinak</span>
-        <p>Više od 51 000 zapisa ponovno u svakodnevnoj upotrebi i pretraživo u sekundama; novi nalazi diktirani i sastavljeni umjesto tipkani; GDPR obveze automatizirane umjesto pamćene.</p>
+        <p>Raniji preparati udaljeni su jedan klik, brojanja su ujednačena među čitačima, a patolog zadržava zadnju riječ o svakom polju.</p>
       </div>
       <ul class="points">
-        <li>Serverska pretraga i filtriranje 51 000+ zapisa: dijagnoza, nalaz, vlasnik, tip pretrage, liječnik, razdoblje</li>
-        <li>AI-nacrt strukturiranog nalaza na hrvatskom (zaglavlje, sekcije s opisom i dijagnozom, komentar)</li>
-        <li>Živa glasovna diktacija nalaza na hrvatskom jeziku (streaming transkripcija)</li>
-        <li>Kompletan GDPR paket: pravo na brisanje (čl. 17), minimizacija podataka, automatizacija retencije</li>
+        <li>Slike cijelih preparata pohranjene uz slučaj, s usporednim prikazom</li>
+        <li>Anotacija i mjerenje izravno na preparatu</li>
+        <li>AI probir označen za provjeru, nikad unesen kao dijagnoza</li>
+        <li>Svaki prijedlog sljediv do verzije modela koja ga je dala</li>
       </ul>
-      <p class="sol-note"><span class="status-chip">Isporučeno</span> Dodatna mogućnost iste vertikale: pretraga medicinskih slika po vizualnoj sličnosti.</p>
+      <p class="sol-note"><span class="status-chip">Ilustrativni scenarij</span></p>
     </section>
-
-    <section class="sol" id="biosignali" aria-labelledby="t-biosignali">
-      <p class="sol-kicker">Primjena 05 · Klinička dijagnostika biosignala</p>
-      <h2 class="sol-title" id="t-biosignali">Od sirovog signala do nalaza u pacijentovu portalu</h2>
+    <section class="sol" id="razudba-certifikati" aria-labelledby="t-razudba-certifikati">
+      <p class="sol-kicker">Primjena 04 · Proizvodne životinje</p>
+      <h2 class="sol-title" id="t-razudba-certifikati">Razudba u proizvodnom stadu, s dokumentacijom provjerenom prije nego što zaustavi slučaj</h2>
+      <ul class="layer-badges" aria-label="Korišteni slojevi">
+        <li class="lb lb-edge"><i aria-hidden="true"></i>dAI Edge</li>
+        <li class="lb lb-datahub"><i aria-hidden="true"></i>dAI DataHub</li>
+        <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
+      </ul>
+      <div class="uc-block">
+        <span class="uc-label">Izazov</span>
+        <p>Slučaj razudbe u stadu dolazi s pristancima, dokumentima o premještanju te izvoznim i zdravstvenim certifikatima, a potpis koji nedostaje otkrije se tek kad je nalaz spreman za slanje.</p>
+      </div>
+      <div class="uc-block">
+        <span class="uc-label">Rješenje</span>
+        <p>Dokumenti se provjeravaju na potpunost i konzistentnost kako stižu, rezultati razudbe, patohistologije i mikrobiologije stoje u jednom zapisu slučaja, a nalaz i certifikati sastavljaju se iz istih podataka.</p>
+      </div>
+      <div class="uc-block">
+        <span class="uc-label">Učinak</span>
+        <p>Dokumentacija koja nedostaje uhvati se prvog dana, a ne pri potpisivanju, a povijest slučaja stada ostaje na jednom mjestu za sljedeći posjet.</p>
+      </div>
+      <ul class="points">
+        <li>Automatska provjera pristanaka, dokumenata o premještanju i zdravstvenih certifikata</li>
+        <li>Jedan zapis slučaja kroz razudbu, patohistologiju i mikrobiologiju</li>
+        <li>Zapisi na razini stada uz pojedinačne životinje</li>
+        <li>Nacrti nalaza i certifikata iz istih izvornih podataka</li>
+      </ul>
+      <p class="sol-note"><span class="status-chip">Ilustrativni scenarij</span></p>
+    </section>
+    <section class="sol" id="organizacija-prakse" aria-labelledby="t-organizacija-prakse">
+      <p class="sol-kicker">Primjena 05 · Specijalistička klinika</p>
+      <h2 class="sol-title" id="t-organizacija-prakse">Termini za operacije, kapacitet hospitalizacije i zahtjevi prema osiguranju u jednom planu</h2>
       <ul class="layer-badges" aria-label="Korišteni slojevi">
         <li class="lb lb-inference"><i aria-hidden="true"></i>dAI Inference</li>
         <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
       </ul>
       <div class="uc-block">
         <span class="uc-label">Izazov</span>
-        <p>Liječnik s rezultatom spektralnog mjerenja biosignala treba brzu, transparentnu ML procjenu
-          i izvještaj koji može podijeliti s pacijentom, bez ručnog sastavljanja.</p>
+        <p>Pregledi, operacije, uzorkovanja, rasporedi osoblja i kapacitet pansiona planiraju se u odvojenim kalendarima, a zahtjevi prema osiguranju slažu se ručno na kraju mjeseca.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Rješenje</span>
-        <p>Liječnik učita mjerenja, ansambl neovisnih ML modela paralelno glasa o klasifikaciji s
-          prikazom pouzdanosti i glasova svakog modela, generativna AI sastavlja klinički narativ,
-          a PDF izvještaj stiže u pacijentov vlastiti sigurni portal.</p>
+        <p>Jedan raspored obuhvaća preglede, termine za operacije, uzorkovanja, rasporede osoblja, dostupnost analizatora i skenera te kapacitete hospitalizacije i pansiona. Pregledi, zahvati, lijekovi i paneli prate se od predračuna do računa, a zahtjevi se pripremaju iz kliničkog zapisa.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Učinak</span>
-        <p>Liječnik dobiva klasifikaciju s pouzdanošću i glasovima po modelu, a ne neobjašnjivu brojku; pacijent dobiva čitljiv izvještaj u svom portalu bez ručnog sastavljanja.</p>
+        <p>Jedno mjesto za planiranje tjedna, računi koji odgovaraju učinjenom i zahtjevi spremni bez usklađivanja na kraju mjeseca.</p>
       </div>
       <ul class="points">
-        <li>Objašnjiv ansambl umjesto jedne crne kutije: većinsko glasanje s razradom po modelu i prosječnim vjerojatnostima</li>
-        <li>Ugrađeni pacijentov portal: pacijent vidi isključivo vlastite nalaze (granularna autorizacija)</li>
-        <li>AI-generirani narativni izvještaj + PDF s vremenski ograničenom poveznicom i opcijom slušanja</li>
-        <li>Serverless arhitektura s upravljanjem pacijentima i otvaranjem pacijentskih računa u jednom kliku</li>
+        <li>Pregledi, operacije, uzorkovanja i rasporedi u jednom kalendaru</li>
+        <li>Kapaciteti hospitalizacije i pansiona planirani zajedno s ostalim</li>
+        <li>Od predračuna do računa za preglede, zahvate, lijekove, panele i patološke slučajeve</li>
+        <li>Zahtjevi prema osiguranju pripremljeni iz kliničkog zapisa</li>
       </ul>
-      <p class="sol-note"><span class="status-chip">Demonstracijsko okruženje</span> Prikazano na fiktivnim podacima.</p>
+      <p class="sol-note"><span class="status-chip">Ilustrativni scenarij</span></p>
     </section>
 
   </div>
 
   <section class="cta container" id="kontakt">
-    <h2 class="cta-title">Imate sličan izazov?</h2>
-    <p class="cta-sub">Opišite nam svoj radni tijek, a pokazat ćemo vam kako ga slojevi
-      LabVet stacka rješavaju.</p>
+    <h2 class="cta-title">Imate sličnu situaciju?</h2>
+    <p class="cta-sub">Opišite nam svoj radni tijek, a pokazat ćemo vam kako ga
+      LabVet Studio rješava.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="mailto:contact@daignostics.info">Zatražite demo</a>
       <a class="btn btn-ghost" href="rjesenja.html">Pogledajte rješenja</a>

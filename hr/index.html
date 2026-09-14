@@ -46,8 +46,9 @@
 
 <header class="site-head">
   <div class="container head-row">
-    <a class="brand" href="index.html" aria-label="dAIgnostics početna">
+    <a class="brand" href="index.html" aria-label="LabVet Studio, proizvod tvrtke dAIgnostics, početna">
       <img src="../assets/daignostics-logo.png" alt="dAIgnostics" class="brand-logo" width="151" height="36">
+      <span class="brand-product">LabVet Studio</span>
     </a>
     <nav class="main-nav" aria-label="Glavna navigacija">
       <ul>
@@ -56,11 +57,12 @@
             <svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="dd">
-            <li><a href="rjesenja.html#health-studio">Health Studio: dijagnostička platforma</a></li>
-            <li><a href="rjesenja.html#dai-edge">dAI Edge: suverenost podataka</a></li>
-            <li><a href="rjesenja.html#ai-izvjestavanje">AI-asistirano izvještavanje</a></li>
-            <li><a href="rjesenja.html#cezih">Nacionalna povezivost (CEZIH)</a></li>
-            <li><a href="rjesenja.html#operacije">Optimizacija bolničkih resursa</a></li>
+            <li><a href="rjesenja.html#pathology-workflow">Patološki tijek rada: od zaprimanja do potpisa</a></li>
+            <li><a href="rjesenja.html#digital-pathology">Digitalna patologija i rad sa slikama</a></li>
+            <li><a href="rjesenja.html#diagnostic-pipeline">Automatizacija dijagnostičkog procesa</a></li>
+            <li><a href="rjesenja.html#animal-data">Podaci o životinjama, vlasnicima i dokumentima</a></li>
+            <li><a href="rjesenja.html#operations">Planiranje, naplata i odštetni zahtjevi</a></li>
+            <li><a href="rjesenja.html#reporting">Automatski nalazi i sažeci za vlasnike</a></li>
             <li><a class="dd-all" href="rjesenja.html">Sva rješenja →</a></li>
           </ul>
         </li>
@@ -69,11 +71,11 @@
             <svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="dd">
-            <li><a href="primjene.html#radiologija">Nacrt radiološkog nalaza u sekundama</a></li>
-            <li><a href="primjene.html#terapijska-lista">Digitalna terapijska lista</a></li>
-            <li><a href="primjene.html#raspored">Automatski raspored liječnika</a></li>
-            <li><a href="primjene.html#patologija">Modernizacija patološkog arhiva</a></li>
-            <li><a href="primjene.html#biosignali">Od biosignala do nalaza</a></li>
+            <li><a href="primjene.html#od-biopsije-do-nalaza">Od biopsije do potpisanog nalaza</a></li>
+            <li><a href="primjene.html#interni-analizatori">Interni analizatori, ispravni rasponi</a></li>
+            <li><a href="primjene.html#probir-preparata">Pregled preparata s AI probirom</a></li>
+            <li><a href="primjene.html#razudba-certifikati">Razudba s provjerenom dokumentacijom</a></li>
+            <li><a href="primjene.html#organizacija-prakse">Planiranje, kapaciteti i zahtjevi</a></li>
             <li><a class="dd-all" href="primjene.html">Sve primjene →</a></li>
           </ul>
         </li>
@@ -131,7 +133,7 @@
       </article>
       <article class="feature">
         <h2 class="feature-title">Organizacija podataka o životinjama i vlasnicima</h2>
-        <p>Svaki rezultat ostaje povezan sa životinjom, vlasnikom, uputnim veterinarom, analizatorom, uzorkom i verzijom protokola. Vrsta, pasmina, dob, spol, status kastracije/sterilizacije, težina, mikročip i cjelovita povijest bolesti u jednom zapisu: verzionirano, pretraživo i audit-ready, bilo da je riječ o jednom kućnom ljubimcu ili cijelom proizvodnom stadu.</p>
+        <p>Svaki rezultat ostaje povezan sa životinjom, vlasnikom, uputnim veterinarom, analizatorom, uzorkom i verzijom protokola. Vrsta, pasmina, dob, spol, status kastracije/sterilizacije, težina, mikročip i cjelovita povijest bolesti u jednom zapisu: verzionirano, pretraživo i spremno za audit, bilo da je riječ o jednom kućnom ljubimcu ili cijelom proizvodnom stadu.</p>
       </article>
       <article class="feature">
         <h2 class="feature-title">Automatska provjera dokumenata</h2>
@@ -259,12 +261,12 @@
         <p class="card-desc">Objašnjivi rezultati</p>
         <div class="panel-clip">
           <div class="panel" role="region" id="panel-clarity" aria-labelledby="trig-clarity">
-            <p class="panel-tech">Sloj za objašnjivo izvještavanje prema kliničarima.</p>
+            <p class="panel-tech">Sloj za objašnjivo izvještavanje prema patolozima i uputnim veterinarima.</p>
             <ul class="features">
-              <li>Audit-ready nalazi s potpunim tragom odlučivanja</li>
+              <li>Nalazi spremni za audit, s potpunim tragom odlučivanja</li>
               <li>Objašnjivost po nalazu: ključni čimbenici, SHAP i mape istaknutosti (saliency)</li>
               <li>Pragovi pouzdanosti i automatsko označavanje graničnih nalaza</li>
-              <li>Izvoz u HL7 FHIR i PDF uz digitalni potpis</li>
+              <li>Digitalno potpisani PDF nalazi i dostava u sustav za upravljanje praksom</li>
             </ul>
           </div>
         </div>
@@ -289,10 +291,10 @@
         <p class="card-desc">Reproducibilna AI analiza</p>
         <div class="panel-clip">
           <div class="panel" role="region" id="panel-inference" aria-labelledby="trig-inference">
-            <p class="panel-tech">Izvođenje verzioniranih analitičkih tijekova rada s Model-Agnostic učitačem.</p>
+            <p class="panel-tech">Izvođenje verzioniranih analitičkih tijekova rada s učitačem neovisnim o modelu.</p>
             <ul class="features">
               <li>Verzionirani, ponovljivi analitički tijekovi rada</li>
-              <li>Model-Agnostic učitač: ONNX, PyTorch, TensorFlow, scikit-learn</li>
+              <li>Učitač neovisan o modelu: ONNX, PyTorch, TensorFlow, scikit-learn</li>
               <li>Reproducibilnost: rezultat vezan uz točnu verziju modela i podataka</li>
               <li>Horizontalno skaliranje i redovi čekanja za serijske analize</li>
             </ul>
@@ -322,10 +324,10 @@
           <div class="panel" role="region" id="panel-datahub" aria-labelledby="trig-datahub">
             <p class="panel-tech">Upravljana baza podataka s punom sljedivošću.</p>
             <ul class="features">
-              <li>Puna sljedivost (provenance) svakog zapisa i transformacije</li>
+              <li>Potpuna sljedivost podrijetla svakog zapisa i transformacije</li>
               <li>Kontrola pristupa po ulogama (RBAC) i cjelovit revizijski dnevnik</li>
               <li>Verzioniranje skupova podataka s nepromjenjivom poviješću</li>
-              <li>Standardizirani rječnici i formati: LOINC, SNOMED CT, DICOM, OMOP</li>
+              <li>Standardizirani rječnici i formati: SNOMED CT veterinarsko proširenje, LOINC, DICOM</li>
             </ul>
           </div>
         </div>
@@ -350,12 +352,12 @@
         <p class="card-desc">Podaci ostaju u ustanovi</p>
         <div class="panel-clip">
           <div class="panel" role="region" id="panel-edge" aria-labelledby="trig-edge">
-            <p class="panel-tech">Sigurna ingestija i lokalna harmonizacija na lokaciji bolnice.</p>
+            <p class="panel-tech">Siguran prihvat podataka i lokalna harmonizacija u samoj praksi ili laboratoriju.</p>
             <ul class="features">
-              <li>Sigurna ingestija na lokaciji bolnice (on-premise)</li>
-              <li>Lokalna harmonizacija i pseudonimizacija prije svake obrade</li>
-              <li>Suverenitet podataka: podaci ne napuštaju ustanovu bez odobrenja</li>
-              <li>Šifriranje u mirovanju i prijenosu (AES-256, TLS 1.3) uz LIS/BIS integraciju</li>
+              <li>Siguran prihvat podataka unutar prakse ili laboratorija (on-premise)</li>
+              <li>Lokalna harmonizacija i pseudonimizacija podataka o vlasnicima prije svake obrade</li>
+              <li>Suverenitet podataka: podaci ne napuštaju praksu bez odobrenja</li>
+              <li>Šifriranje u mirovanju i prijenosu (AES-256, TLS 1.3) uz integraciju s analizatorima i sustavom za upravljanje praksom</li>
             </ul>
           </div>
         </div>
@@ -371,14 +373,14 @@
   <section class="badges" aria-label="Standardi i usklađenost">
     <div class="container badge-row">
       <button class="chip" type="button" aria-expanded="false" aria-controls="note-workflows">Verzionirani, ponovljivi tijekovi rada</button>
-      <button class="chip" type="button" aria-expanded="false" aria-controls="note-standards">HL7 FHIR / DICOM</button>
-      <button class="chip" type="button" aria-expanded="false" aria-controls="note-compliance">Dizajnirano za GDPR i EU AI Act</button>
+      <button class="chip" type="button" aria-expanded="false" aria-controls="note-standards">DICOM i sučelja analizatora</button>
+      <button class="chip" type="button" aria-expanded="false" aria-controls="note-compliance">Dizajnirano za GDPR</button>
       <button class="chip" type="button" aria-expanded="false" aria-controls="note-onprem">Podaci ostaju u ustanovi</button>
     </div>
     <div class="container chip-notes">
       <p class="chip-note" id="note-workflows" hidden>Svaka analiza radi kao verzionirani tijek rada: isti ulaz daje isti rezultat, a svaki je rezultat sljediv do točne verzije tijeka rada i modela koji su ga dali.</p>
-      <p class="chip-note" id="note-standards" hidden>Nalazi, narudžbe i slike razmjenjuju se preko standarda koje vaš LIS, BIS i PACS već govore: HL7 FHIR za podatke, DICOM za slike.</p>
-      <p class="chip-note" id="note-compliance" hidden>Pseudonimizacija, kontrola pristupa po ulogama, potpuni revizijski zapisi i obvezna provjera čovjeka ugrađeni su kako bi podržali obveze iz GDPR-a i zahtjeve koje EU AI Act postavlja za medicinske AI sustave.</p>
+      <p class="chip-note" id="note-standards" hidden>Slike putuju kao DICOM; analizatori, skeneri preparata, referentni laboratoriji i vaš sustav za upravljanje praksom povezuju se otvorenim sučeljima, bez prepisivanja.</p>
+      <p class="chip-note" id="note-compliance" hidden>Podaci o vlasnicima osobni su podaci: pseudonimizacija, kontrola pristupa po ulogama, potpuni revizijski zapisi i obvezna provjera čovjeka ugrađeni su kako bi podržali obveze iz GDPR-a.</p>
       <p class="chip-note" id="note-onprem" hidden>Podaci se zaprimaju, pseudonimiziraju i obrađuju unutar vaše ustanove. Ništa ne napušta ustanovu bez vašeg izričitog odobrenja.</p>
     </div>
   </section>
@@ -386,7 +388,7 @@
   <section class="cta container" id="kontakt">
     <h2 class="cta-title">Spremni za suverenu dijagnostiku?</h2>
     <p class="cta-sub">Provjerite kako se LabVet Studio uklapa u vašu praksu ili laboratorij,
-      od prvog uzorka do potpisanog, audit-ready nalaza.</p>
+      od prvog uzorka do potpisanog nalaza spremnog za audit.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="mailto:contact@daignostics.info">Zatražite demo</a>
       <a class="btn btn-ghost" href="https://daignostics.info" target="_blank" rel="noopener">Saznajte više na daignostics.info</a>

@@ -46,8 +46,9 @@
 
 <header class="site-head">
   <div class="container head-row">
-    <a class="brand" href="index.html" aria-label="dAIgnostics home">
+    <a class="brand" href="index.html" aria-label="LabVet Studio by dAIgnostics, home">
       <img src="assets/daignostics-logo.png" alt="dAIgnostics" class="brand-logo" width="151" height="36">
+      <span class="brand-product">LabVet Studio</span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       <ul>
@@ -56,11 +57,12 @@
             <svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="dd">
-            <li><a href="solutions.html#health-studio">Health Studio: diagnostics platform</a></li>
-            <li><a href="solutions.html#dai-edge">dAI Edge: data sovereignty</a></li>
-            <li><a href="solutions.html#ai-reporting">AI-assisted reporting</a></li>
-            <li><a href="solutions.html#cezih">National connectivity (CEZIH)</a></li>
-            <li><a href="solutions.html#operations">Hospital resource optimization</a></li>
+            <li><a href="solutions.html#pathology-workflow">Pathology workflow: accession to sign-out</a></li>
+            <li><a href="solutions.html#digital-pathology">Digital pathology and image handling</a></li>
+            <li><a href="solutions.html#diagnostic-pipeline">Diagnostic pipeline automation</a></li>
+            <li><a href="solutions.html#animal-data">Animal, owner and document data</a></li>
+            <li><a href="solutions.html#operations">Scheduling, billing and claims</a></li>
+            <li><a href="solutions.html#reporting">Automated reports and owner summaries</a></li>
             <li><a class="dd-all" href="solutions.html">All solutions →</a></li>
           </ul>
         </li>
@@ -69,11 +71,11 @@
             <svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="dd">
-            <li><a href="use-cases.html#radiology">Radiology report drafts in seconds</a></li>
-            <li><a href="use-cases.html#therapy-list">Digital therapy list</a></li>
-            <li><a href="use-cases.html#scheduling">Automated physician scheduling</a></li>
-            <li><a href="use-cases.html#pathology">Pathology archive modernization</a></li>
-            <li><a href="use-cases.html#biosignals">From biosignals to reports</a></li>
+            <li><a href="use-cases.html#biopsy-to-report">From biopsy to signed report</a></li>
+            <li><a href="use-cases.html#in-house-analysers">In-house analysers, right reference ranges</a></li>
+            <li><a href="use-cases.html#slide-screening">Whole-slide review with AI screening</a></li>
+            <li><a href="use-cases.html#necropsy-certificates">Necropsy with checked paperwork</a></li>
+            <li><a href="use-cases.html#practice-operations">Scheduling, capacity and claims</a></li>
             <li><a class="dd-all" href="use-cases.html">All use cases →</a></li>
           </ul>
         </li>
@@ -259,12 +261,12 @@
         <p class="card-desc">Explainable results</p>
         <div class="panel-clip">
           <div class="panel" role="region" id="panel-clarity" aria-labelledby="trig-clarity">
-            <p class="panel-tech">Explainable reporting layer for clinicians (audit-ready output).</p>
+            <p class="panel-tech">Explainable reporting layer for pathologists and referring vets (audit-ready output).</p>
             <ul class="features">
               <li>Audit-ready reports with a complete decision trail</li>
               <li>Per-report explainability: key factors, SHAP and saliency maps</li>
               <li>Confidence thresholds with automatic flagging of borderline results</li>
-              <li>Export to HL7 FHIR and digitally signed PDF</li>
+              <li>Digitally signed PDF reports and delivery to your practice management system</li>
             </ul>
           </div>
         </div>
@@ -325,7 +327,7 @@
               <li>Full provenance for every record and transformation</li>
               <li>Role-based access control (RBAC) and a complete audit log</li>
               <li>Dataset versioning with immutable history</li>
-              <li>Standard vocabularies and formats: LOINC, SNOMED CT, DICOM, OMOP</li>
+              <li>Standard vocabularies and formats: SNOMED CT Veterinary Extension, LOINC, DICOM</li>
             </ul>
           </div>
         </div>
@@ -350,12 +352,12 @@
         <p class="card-desc">Keep data on-site</p>
         <div class="panel-clip">
           <div class="panel" role="region" id="panel-edge" aria-labelledby="trig-edge">
-            <p class="panel-tech">Secure ingestion and local harmonization (sovereignty layer) on hospital premises.</p>
+            <p class="panel-tech">Secure ingestion and local harmonization (sovereignty layer) at the practice or laboratory.</p>
             <ul class="features">
-              <li>Secure on-premise ingestion at the hospital site</li>
-              <li>Local harmonization and pseudonymization before any processing</li>
-              <li>Data sovereignty: data never leaves the institution without approval</li>
-              <li>Encryption at rest and in transit (AES-256, TLS 1.3) with LIS/HIS integration</li>
+              <li>Secure on-premise ingestion at the practice or laboratory</li>
+              <li>Local harmonization and pseudonymization of owner data before any processing</li>
+              <li>Data sovereignty: data never leaves the practice without approval</li>
+              <li>Encryption at rest and in transit (AES-256, TLS 1.3) with analyser and practice-management-system integration</li>
             </ul>
           </div>
         </div>
@@ -371,14 +373,14 @@
   <section class="badges" aria-label="Standards and compliance">
     <div class="container badge-row">
       <button class="chip" type="button" aria-expanded="false" aria-controls="note-workflows">Versioned, reproducible workflows</button>
-      <button class="chip" type="button" aria-expanded="false" aria-controls="note-standards">HL7 FHIR / DICOM</button>
-      <button class="chip" type="button" aria-expanded="false" aria-controls="note-compliance">Designed for GDPR &amp; the EU AI Act</button>
+      <button class="chip" type="button" aria-expanded="false" aria-controls="note-standards">DICOM and analyser interfaces</button>
+      <button class="chip" type="button" aria-expanded="false" aria-controls="note-compliance">Designed for GDPR</button>
       <button class="chip" type="button" aria-expanded="false" aria-controls="note-onprem">Data stays on-premise</button>
     </div>
     <div class="container chip-notes">
       <p class="chip-note" id="note-workflows" hidden>Every analysis runs as a versioned workflow: the same input gives the same result, and every result can be traced to the exact workflow and model version that produced it.</p>
-      <p class="chip-note" id="note-standards" hidden>Results, orders and images are exchanged over the standards your LIS, HIS and PACS already speak: HL7 FHIR for data, DICOM for images.</p>
-      <p class="chip-note" id="note-compliance" hidden>Pseudonymisation, role-based access, complete audit logs and mandatory human review are built in to support GDPR obligations and the requirements the EU AI Act sets for medical AI systems.</p>
+      <p class="chip-note" id="note-standards" hidden>Images travel as DICOM; analysers, slide scanners, reference laboratories and your practice management system connect through open interfaces, with no retyping.</p>
+      <p class="chip-note" id="note-compliance" hidden>Owner data is personal data: pseudonymisation, role-based access, complete audit logs and mandatory human review are built in to support GDPR obligations.</p>
       <p class="chip-note" id="note-onprem" hidden>Data is ingested, pseudonymised and processed inside your institution. Nothing leaves the premises without your explicit approval.</p>
     </div>
   </section>

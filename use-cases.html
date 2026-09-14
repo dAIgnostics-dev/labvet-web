@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Use cases | LabVet Studio</title>
-  <meta name="description" content="dAIgnostics platform use cases in practice: radiology reporting, a digital therapy list, automated physician scheduling, pathology archive modernization and biosignal diagnostics.">
+  <meta name="description" content="How LabVet Studio works in practices, referral clinics and veterinary pathology laboratories: illustrative scenarios from biopsy to signed report, in-house analysers, whole-slide review, necropsy paperwork and practice operations.">
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
   <link rel="alternate" hreflang="en" href="use-cases.html">
   <link rel="alternate" hreflang="hr" href="hr/primjene.html">
@@ -40,8 +40,9 @@
 
 <header class="site-head">
   <div class="container head-row">
-    <a class="brand" href="index.html" aria-label="dAIgnostics home">
+    <a class="brand" href="index.html" aria-label="LabVet Studio by dAIgnostics, home">
       <img src="assets/daignostics-logo.png" alt="dAIgnostics" class="brand-logo" width="151" height="36">
+      <span class="brand-product">LabVet Studio</span>
     </a>
     <nav class="main-nav" aria-label="Main navigation">
       <ul>
@@ -50,11 +51,13 @@
             <svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="dd">
-            <li><a href="solutions.html#health-studio">Health Studio: diagnostics platform</a></li>
-            <li><a href="solutions.html#dai-edge">dAI Edge: data sovereignty</a></li>
-            <li><a href="solutions.html#ai-reporting">AI-assisted reporting</a></li>
-            <li><a href="solutions.html#cezih">National connectivity (CEZIH)</a></li>
-            <li><a href="solutions.html#operations">Hospital resource optimization</a></li>
+            <li><a href="solutions.html#pathology-workflow">Pathology workflow: accession to sign-out</a></li>
+            <li><a href="solutions.html#digital-pathology">Digital pathology and image handling</a></li>
+            <li><a href="solutions.html#diagnostic-pipeline">Diagnostic pipeline automation</a></li>
+            <li><a href="solutions.html#animal-data">Animal, owner and document data</a></li>
+            <li><a href="solutions.html#operations">Scheduling, billing and claims</a></li>
+            <li><a href="solutions.html#reporting">Automated reports and owner summaries</a></li>
+            <li><a class="dd-all" href="solutions.html">All solutions →</a></li>
           </ul>
         </li>
         <li class="has-dd">
@@ -62,11 +65,12 @@
             <svg class="nav-chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" focusable="false" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
           </a>
           <ul class="dd">
-            <li><a href="#radiology">Radiology report drafts in seconds</a></li>
-            <li><a href="#therapy-list">Digital therapy list</a></li>
-            <li><a href="#scheduling">Automated physician scheduling</a></li>
-            <li><a href="#pathology">Pathology archive modernization</a></li>
-            <li><a href="#biosignals">From biosignals to reports</a></li>
+            <li><a href="use-cases.html#biopsy-to-report">From biopsy to signed report</a></li>
+            <li><a href="use-cases.html#in-house-analysers">In-house analysers, right reference ranges</a></li>
+            <li><a href="use-cases.html#slide-screening">Whole-slide review with AI screening</a></li>
+            <li><a href="use-cases.html#necropsy-certificates">Necropsy with checked paperwork</a></li>
+            <li><a href="use-cases.html#practice-operations">Scheduling, capacity and claims</a></li>
+            <li><a class="dd-all" href="use-cases.html">All use cases →</a></li>
           </ul>
         </li>
       </ul>
@@ -80,112 +84,71 @@
   <section class="hero subhero container">
     <p class="eyebrow">Use cases</p>
     <h1 class="hero-title">LabVet in <span class="accent">practice</span></h1>
-    <p class="lede">Concrete problems from clinics, laboratories and hospitals, and how
-      the layers of the dAI platform solve them in everyday work.</p>
+    <p class="lede">Everyday situations in practices, referral clinics and veterinary pathology laboratories, and how
+      LabVet Studio handles them. Illustrative scenarios, not client case studies.</p>
   </section>
 
   <div class="page-sections container">
 
-    <section class="sol" id="radiology" aria-labelledby="t-radiology">
-      <p class="sol-kicker">Use case 01 · Radiology</p>
-      <h2 class="sol-title" id="t-radiology">Radiology report drafts in seconds, in the local language</h2>
-      <ul class="layer-badges" aria-label="Layers used">
-        <li class="lb lb-datahub"><i aria-hidden="true"></i>dAI DataHub</li>
-        <li class="lb lb-inference"><i aria-hidden="true"></i>dAI Inference</li>
-        <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
-      </ul>
-      <div class="uc-block">
-        <span class="uc-label">Challenge</span>
-        <p>Radiologists spend significant time writing reports and manually hunting for comparable
-          prior cases; keyword search misses cases described with different terminology.</p>
-      </div>
-      <div class="uc-block">
-        <span class="uc-label">Solution</span>
-        <p>The system semantically ranks similar prior cases from the institution's own archive and
-          assembles a structured report draft grounded in them. The physician reviews, corrects and
-          signs the draft, and every corrected report immediately enriches the knowledge base.
-          Everything runs locally; no data leaves the institution.</p>
-      </div>
-      <div class="uc-block">
-        <span class="uc-label">Impact</span>
-        <p>A structured draft in seconds instead of minutes of writing and searching; every signed report makes the next draft better; the archive stays in-house.</p>
-      </div>
-      <ul class="points">
-        <li>Search by meaning: "blood in urine" also finds reports labelled "haematuria", with a multilingual model running locally and no API key</li>
-        <li>Report drafts faithful to the institution's style and terminology (abdominal CT, CT urography, pelvic CT)</li>
-        <li>Physician in the loop: the draft is explicitly a proposal for review, correction and signature</li>
-        <li>Anamnesis summarized into 3–6 clinical bullet points; pathological findings and measurements first</li>
-      </ul>
-      <p class="sol-note"><span class="status-chip">Pilot</span></p>
-    </section>
-
-    <section class="sol" id="therapy-list" aria-labelledby="t-therapy">
-      <p class="sol-kicker">Use case 02 · Specialty clinic</p>
-      <h2 class="sol-title" id="t-therapy">A digital therapy list: from paper to an auditable record</h2>
+    <section class="sol" id="biopsy-to-report" aria-labelledby="t-biopsy-to-report">
+      <p class="sol-kicker">Use case 01 · Referral pathology laboratory</p>
+      <h2 class="sol-title" id="t-biopsy-to-report">From a biopsy in the post to a signed report at the referring vet</h2>
       <ul class="layer-badges" aria-label="Layers used">
         <li class="lb lb-edge"><i aria-hidden="true"></i>dAI Edge</li>
+        <li class="lb lb-datahub"><i aria-hidden="true"></i>dAI DataHub</li>
         <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
       </ul>
       <div class="uc-block">
         <span class="uc-label">Challenge</span>
-        <p>Patient therapy was tracked on a paper form and a ward Word document: no automatic safety
-          checks, hard to read, and no audit trail.</p>
+        <p>A biopsy arrives with a handwritten submission form. Accessioning, block and slide tracking, the pathologist's report and the invoice live in separate tools, and the referring vet calls to ask where the case is.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Solution</span>
-        <p>The medication process was digitized from admission to discharge: a nurse photographs the
-          handwritten form, AI handwriting recognition (with mandatory human confirmation of every
-          field) captures the existing therapy, the physician reconciles and prescribes with a PIN
-          e-signature, and administrations are recorded at the bedside, even offline.</p>
+        <p>The specimen is accessioned on arrival and linked to the animal, owner and referring vet. Every block, slide and stain is tracked through processing, the pathologist signs out from a queue, and the signed report and the invoice go out from the same record.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Impact</span>
-        <p>Every dose, change and override is traceable to a person and a time; allergy checks run automatically; the ward keeps working when the network does not.</p>
+        <p>The status of any case is visible without walking to the bench, the referring vet gets the report the moment it is signed, and nothing is invoiced twice or not at all.</p>
       </div>
       <ul class="points">
-        <li>Handwriting recognition with a confidence threshold and mandatory human confirmation per field; the raw result is archived for traceability</li>
-        <li>Automatic allergy alerts checked both in the UI and on the server, with permanently logged overrides</li>
-        <li>Server-side PIN e-signature for reconciliation, prescribing and discontinuation; an append-only audit trail</li>
-        <li>Offline-first operation (local cache + sync) and GDPR-compliant EU hosting</li>
+        <li>Submission form checked for completeness before the case is accessioned</li>
+        <li>Block, slide and stain tracking with the location of every case</li>
+        <li>Sign-out queue per pathologist with turnaround visible</li>
+        <li>Report delivered to the referring vet and invoice raised from the same case record</li>
       </ul>
-      <p class="sol-note"><span class="status-chip">Demonstration environment</span> Shown on fictitious data.</p>
+      <p class="sol-note"><span class="status-chip">Illustrative scenario</span></p>
     </section>
-
-    <section class="sol" id="scheduling" aria-labelledby="t-scheduling">
-      <p class="sol-kicker">Use case 03 · Specialty cardiovascular hospital</p>
-      <h2 class="sol-title" id="t-scheduling">Automated monthly physician scheduling</h2>
+    <section class="sol" id="in-house-analysers" aria-labelledby="t-in-house-analysers">
+      <p class="sol-kicker">Use case 02 · Small-animal practice</p>
+      <h2 class="sol-title" id="t-in-house-analysers">In-house haematology and biochemistry read against the right reference ranges</h2>
       <ul class="layer-badges" aria-label="Layers used">
+        <li class="lb lb-edge"><i aria-hidden="true"></i>dAI Edge</li>
         <li class="lb lb-inference"><i aria-hidden="true"></i>dAI Inference</li>
         <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
       </ul>
       <div class="uc-block">
         <span class="uc-label">Challenge</span>
-        <p>The monthly physician schedule across multiple sites and duty posts (ward, outpatient clinics, the catheterization lab, on-call shifts) was assembled by hand in spreadsheets:
-          slow, error-prone, and with no guarantee that insurer slots and hour quotas were honoured.</p>
+        <p>In-house analysers print results that someone retypes into the practice system, and a value that is normal for a Greyhound is flagged as if it came from a Labrador.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Solution</span>
-        <p>An optimization solver generates an hour-by-hour schedule under hard rules (competencies,
-          hour quotas, insurer windows, travel between cities) and layered priorities. When a slot
-          stays uncovered, the system explains why and proposes concrete measures; for sick leave it
-          automatically ranks substitutes with justification.</p>
+        <p>Analyser results are imported automatically with their metadata, checked on arrival and compared against reference ranges for the animal's species, breed and age. Out-of-range values are flagged, with the reason shown.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Impact</span>
-        <p>A month of schedules in minutes instead of days, with insurer windows and hour quotas guaranteed by construction, and a justified substitute proposed the moment someone calls in sick.</p>
+        <p>No retyping, no missed flags, and fewer false alarms on breeds and species with their own normal values.</p>
       </div>
       <ul class="points">
-        <li>A physician × duty-post competency matrix (allowed / preferred / forbidden) and insurer-contracted priority windows</li>
-        <li>Uncovered-slot diagnostics with a ladder of relaxations and concrete proposals</li>
-        <li>Instant re-solving of a published schedule on absences, with versioning and change markers</li>
-        <li>A KPI dashboard: coverage without manual intervention, time to a confirmed substitution</li>
+        <li>Direct connectors for in-house analysers, no retyping</li>
+        <li>Species-, breed- and age-appropriate reference ranges</li>
+        <li>Technical checks and quality control before a value reaches the clinician</li>
+        <li>Trend view across the animal's previous results</li>
       </ul>
-      <p class="sol-note"><span class="status-chip">Standalone application</span></p>
+      <p class="sol-note"><span class="status-chip">Illustrative scenario</span></p>
     </section>
-
-    <section class="sol" id="pathology" aria-labelledby="t-pathology">
-      <p class="sol-kicker">Use case 04 · Veterinary pathology institute</p>
-      <h2 class="sol-title" id="t-pathology">Rescuing and modernizing a pathology archive</h2>
+    <section class="sol" id="slide-screening" aria-labelledby="t-slide-screening">
+      <p class="sol-kicker">Use case 03 · Veterinary oncology</p>
+      <h2 class="sol-title" id="t-slide-screening">Whole-slide images compared across timepoints, with AI as a second pair of eyes</h2>
       <ul class="layer-badges" aria-label="Layers used">
         <li class="lb lb-datahub"><i aria-hidden="true"></i>dAI DataHub</li>
         <li class="lb lb-inference"><i aria-hidden="true"></i>dAI Inference</li>
@@ -193,66 +156,86 @@
       </ul>
       <div class="uc-block">
         <span class="uc-label">Challenge</span>
-        <p>After a ransomware attack, a veterinary pathology institute was left with a damaged legacy
-          database of more than 51,000 examination records, and no modern system for daily work.</p>
+        <p>Follow-up biopsies are read months apart, the earlier slides are hard to find, and mitotic counts are done by eye under time pressure.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Solution</span>
-        <p>The data was forensically recovered and turned into a secure, GDPR-compliant application:
-          a searchable archive, structured report forms per examination type (necropsy,
-          histopathology, cytology), image management, live voice dictation and AI report drafts, with inference running exclusively within the EU.</p>
+        <p>Whole-slide images are stored with the case and opened side by side across timepoints. AI screening proposes mitotic counts, cellularity and regions worth a closer look; the pathologist confirms or corrects every suggestion before it enters the report.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Impact</span>
-        <p>51,000+ records back in daily use and searchable in seconds; new reports dictated and drafted instead of typed; GDPR obligations automated rather than remembered.</p>
+        <p>Earlier slides are one click away, counts are consistent between readers, and the pathologist keeps the final word on every field.</p>
       </div>
       <ul class="points">
-        <li>Server-side search and filtering across 51,000+ records: diagnosis, findings, owner, examination type, clinician, period</li>
-        <li>AI drafts of structured reports (header, sections with description and diagnosis, comment)</li>
-        <li>Live voice dictation of reports (streaming transcription)</li>
-        <li>A complete GDPR package: right to erasure (Art. 17), data minimization, retention automation</li>
+        <li>Whole-slide images stored alongside the case and compared side by side</li>
+        <li>Annotation and measurement directly on the slide</li>
+        <li>AI-assisted screening flagged for review, never entered as the diagnosis</li>
+        <li>Every suggestion traceable to the model version that produced it</li>
       </ul>
-      <p class="sol-note"><span class="status-chip">Delivered</span> A related capability in the same vertical: visual-similarity search across medical images.</p>
+      <p class="sol-note"><span class="status-chip">Illustrative scenario</span></p>
     </section>
-
-    <section class="sol" id="biosignals" aria-labelledby="t-biosignals">
-      <p class="sol-kicker">Use case 05 · Clinical biosignal diagnostics</p>
-      <h2 class="sol-title" id="t-biosignals">From a raw signal to a report in the patient's portal</h2>
+    <section class="sol" id="necropsy-certificates" aria-labelledby="t-necropsy-certificates">
+      <p class="sol-kicker">Use case 04 · Production animals</p>
+      <h2 class="sol-title" id="t-necropsy-certificates">Necropsy in a production herd, with the paperwork checked before it holds up the case</h2>
+      <ul class="layer-badges" aria-label="Layers used">
+        <li class="lb lb-edge"><i aria-hidden="true"></i>dAI Edge</li>
+        <li class="lb lb-datahub"><i aria-hidden="true"></i>dAI DataHub</li>
+        <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
+      </ul>
+      <div class="uc-block">
+        <span class="uc-label">Challenge</span>
+        <p>A necropsy case in a herd comes with consent forms, movement documents and export and health certificates, and a missing signature is discovered only when the report is ready to go out.</p>
+      </div>
+      <div class="uc-block">
+        <span class="uc-label">Solution</span>
+        <p>Documents are checked for completeness and consistency as they arrive, the necropsy, histopathology and microbiology results sit in one case record, and the report and the certificates are drafted from the same data.</p>
+      </div>
+      <div class="uc-block">
+        <span class="uc-label">Impact</span>
+        <p>Missing paperwork is caught on day one rather than at sign-out, and the herd's case history stays in one place for the next visit.</p>
+      </div>
+      <ul class="points">
+        <li>Automated checking of consent, movement and health-certificate documents</li>
+        <li>One case record across necropsy, histopathology and microbiology</li>
+        <li>Herd-level records alongside individual animals</li>
+        <li>Report and certificate drafts from the same underlying data</li>
+      </ul>
+      <p class="sol-note"><span class="status-chip">Illustrative scenario</span></p>
+    </section>
+    <section class="sol" id="practice-operations" aria-labelledby="t-practice-operations">
+      <p class="sol-kicker">Use case 05 · Referral clinic</p>
+      <h2 class="sol-title" id="t-practice-operations">Surgery slots, hospitalisation capacity and insurance claims in one plan</h2>
       <ul class="layer-badges" aria-label="Layers used">
         <li class="lb lb-inference"><i aria-hidden="true"></i>dAI Inference</li>
         <li class="lb lb-clarity"><i aria-hidden="true"></i>dAI Clarity</li>
       </ul>
       <div class="uc-block">
         <span class="uc-label">Challenge</span>
-        <p>A physician holding the result of a spectral biosignal measurement needs a fast,
-          transparent ML assessment and a report they can share with the patient, without assembling it by hand.</p>
+        <p>Consultations, surgery, sampling appointments, staff rotas and boarding capacity are planned in separate calendars, and insurance claims are assembled by hand at the end of the month.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Solution</span>
-        <p>The physician uploads the measurements, an ensemble of independent ML models votes on the
-          classification in parallel, showing confidence and each model’s vote; generative AI
-          composes the clinical narrative, and the PDF report lands in the patient's own secure
-          portal.</p>
+        <p>One schedule covers consultations, surgery slots, sampling, staff rotas, analyser and scanner availability and hospitalisation and boarding capacity. Consultations, procedures, medications and panels are tracked from estimate to invoice, and claims are prepared from the clinical record.</p>
       </div>
       <div class="uc-block">
         <span class="uc-label">Impact</span>
-        <p>The physician gets a classification with confidence and per-model votes, not a black-box score; the patient gets a readable report in their portal without anyone assembling it by hand.</p>
+        <p>One place to plan the week, invoices that match what was done, and claims ready without the month-end reconciliation.</p>
       </div>
       <ul class="points">
-        <li>An explainable ensemble instead of one black box: majority voting with a per-model breakdown and averaged probabilities</li>
-        <li>A built-in patient portal: each patient sees only their own reports (fine-grained authorization)</li>
-        <li>An AI-generated narrative report + PDF with a time-limited download link and a listen option</li>
-        <li>Serverless architecture with patient management and one-click patient account provisioning</li>
+        <li>Consultations, surgery, sampling and rotas in one calendar</li>
+        <li>Hospitalisation and boarding capacity planned with everything else</li>
+        <li>Estimate to invoice for consultations, procedures, medications, panels and pathology cases</li>
+        <li>Insurance claims prepared from the clinical record</li>
       </ul>
-      <p class="sol-note"><span class="status-chip">Demonstration environment</span> Shown on fictitious data.</p>
+      <p class="sol-note"><span class="status-chip">Illustrative scenario</span></p>
     </section>
 
   </div>
 
   <section class="cta container" id="contact">
-    <h2 class="cta-title">Facing a similar challenge?</h2>
-    <p class="cta-sub">Describe your workflow and we'll show you how the layers of the
-      LabVet stack solve it.</p>
+    <h2 class="cta-title">Facing a similar situation?</h2>
+    <p class="cta-sub">Describe your workflow and we'll show you how
+      LabVet Studio handles it.</p>
     <div class="cta-row">
       <a class="btn btn-primary" href="mailto:contact@daignostics.info">Request a demo</a>
       <a class="btn btn-ghost" href="solutions.html">See the solutions</a>
